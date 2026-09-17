@@ -2,11 +2,13 @@ mlflow
 dagshub
 scikit-learn
 matplotlib
-pandas==2.2.3
-numpy==1.26.4
+pandas
+numpy
 seaborn
 plotly
 xgboost
 fastapi
 uvicorn
 xgboost==2.1.4
+
+-e .
