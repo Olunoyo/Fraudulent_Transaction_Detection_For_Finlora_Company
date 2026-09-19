@@ -5,6 +5,9 @@ import mlflow
 import mlflow.sklearn
 import pandas as pd
 from pathlib import Path
+import os
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning)
 
 from src.inference.prediction import (load_historical_data,
                                       predict_transaction,
@@ -35,7 +38,7 @@ async def startup_event():
 
 
             BASE_DIR = Path(__file__).resolve().parent.parent
-            csv_path = BASE_DIR / "Finlora_Dataset" / "artifacts" / "Customer_Transaction_Dataset.csv"  
+            csv_path = BASE_DIR / "Finlora_Dataset" / "FinLora_Customer_Transaction_Dataset.csv"
               
             historical_data = load_historical_data(csv_path)
             print("historical data has been successfully created")

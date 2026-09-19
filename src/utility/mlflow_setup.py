@@ -31,7 +31,7 @@ def setup_mlflow():
     repo_owner = 'arieanice3'
     repo_name='Fraudulent_Transaction_Detected_For_Finlora_Company'
 
-    mlflow.set_tracking_uri(f"{dagshub_url}/{repo_owner}/{repo_name}.mlfow")
+    mlflow.set_tracking_uri(f"{dagshub_url}/{repo_owner}/{repo_name}.mlflow")
     # Set experiment 
     mlflow.set_experiment("Fraudulent_Tronsaction_Detection_Models_for_Finlora")
     
